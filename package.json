@@ -1,0 +1,47 @@
+{
+  "name": "nuxt-panda-demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"pnpm nuxt:dev\" \"pnpm slicemachine\" --names \"nuxt,slicemachine\" --prefix-colors green,magenta",
+    "nuxt:dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "slicemachine": "start-slicemachine",
+    "prepare": "panda codegen"
+  },
+  "dependencies": {
+    "@nuxt/fonts": "^0.7.2",
+    "@nuxt/icon": "^1.5.1",
+    "nuxt": "^3.13.1",
+    "vue": "latest",
+    "vue-final-modal": "^4.5.5",
+    "vue-router": "latest",
+    "vue3-carousel-nuxt": "^1.1.2"
+  },
+  "packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c",
+  "devDependencies": {
+    "@iconify-json/ph": "^1.2.0",
+    "@nuxt/kit": "^3.13.1",
+    "@nuxtjs/prismic": "^3.4.0",
+    "@pandacss/dev": "^0.46.0",
+    "@prismicio/client": "^7.8.1",
+    "@prismicio/vue": "^4.2.2",
+    "@slicemachine/adapter-nuxt": "^0.3.49",
+    "concurrently": "^9.0.0",
+    "slice-machine-ui": "^2.7.1",
+    "typescript": "^5.6.2",
+    "vue-tsc": "^2.1.6"
+  },
+  "resolutions": {
+    "vite-plugin-checker": "^0.8.0",
+    "are-we-there-yet": "^3.0.0",
+    "gauge": "^4.0.0",
+    "glob": "^9.0.0",
+    "inflight": "^1.0.7",
+    "npmlog": "^6.0.0",
+    "rimraf": "^4.0.0"
+  }
+}

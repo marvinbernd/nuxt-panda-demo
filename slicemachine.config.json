@@ -1,0 +1,7 @@
+{
+  "repositoryName": "nuxt-panda-demo",
+  "adapter": "@slicemachine/adapter-nuxt",
+  "libraries": ["./slices"],
+  "localSliceSimulatorURL": "http://localhost:3000/slice-simulator",
+  "apiEndpoint": "https://nuxt-panda-demo.cdn.prismic.io/api/v2"
+}
